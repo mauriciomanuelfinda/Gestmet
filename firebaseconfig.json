@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "metodista-database",
+  "private_key_id": "55966baf7d46712d53cf06e5fd7dc11a6bd18be8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzYaLRfgDM07gF\n2pkNUfWrNwWGlKEsxpZgGRk/7+r3T2N39K0KsYO2xdD8I3sNsdHe/3z/+hgdNnmB\nd8gzvn35ztRv2L/9KjrhW3bvjiSGau5WIhrpToRuik29Bqq2PEvL98qPpsiinqt+\nUr2X++0apSvXpj5baBhhrUJ+BIlBexGu1RQq/Z5Yt1rlNIu0OTllYBsktn+RuegN\nYx3alWivsZNZgpSJU+U6gFv1JqBL2h4nCpx8seOVccWEx4XwHIJBLYYLXQS5Q4n8\nEw64135rjF6DHpUxA5Jtd/gSKLuZqik3c74577bE9wAt5qAWfp4FAnWcOmXNs6Xq\nI18/odNpAgMBAAECggEAIP9wM+DdtVAqHTuP5ZUi39bch5v+RS4X2gAr9qjD/LAI\nMHgcP+gVPnFHxyYgvA1uubqebDk9p9wOQHyAIdKkOmiriBKjiKb002FfsOQhQG/Z\nvZMDB9GHh40eDUx1aVYQrGn+A2xvIokVK4T9dwCjJoBlXwNoG6j7uTYl0eg0Nozl\nFK2zSFaXh9xc3K88OZniuqRQsijWMKNO8xXY3nY7vZXHU7kIyttU8OZ/vri20whb\nvXPCA4UhxUpzOyxUMwIvnPKScSerXj+wgnNYNgP4GfmOWDs27HL3A5n2Fi02EDDg\n6RNZMPY3fjVDIxj9Pi46D9W7rOcgMxbHK9Hz9wEb7QKBgQD6ErKuJDOhsEhmIoZq\n5wuZcBjJEfi9xEbn3T1Icci5EnDJk9DCIQWYUMvybfgvRKb2Cc8/R6ZUmPVptwyD\nd6ZH+5BLgNKQWkGB1frptFmSGNgnwt5UBMxDWs2mulW0bwcaX/dnooWrAGBFirEp\noPwik3V9bU528eLWhTap2syL5QKBgQC3ogVh1lAaSAUFrEJ1qKLkQ6I1XqjrHB5R\n/duWaP5pzyIIFzeuAL3fKspRaVDRyhENpjC4jubkBFJuJdT4xQ7JHWLuY4fF8MnB\nIxZflfTMNkyaY3xs0S9ykLWnL8eu/zaYKX5smDkd7jQOBhc7ta0dxVCx0bzI2W1f\nizVIXCmZNQKBgAJ68P69KS3vW6h3qzGgPQM2k2hbH0Zyjel6zkLLrhv3zNqS9r0W\nKsIJ+xvab124ppdGHaIZCdNI+RYlVKBxLVsFabb1/iCkZIXvI1/yA/lo+avbSO04\nZvY8DlIbAwKZH07pqMCEYiMCC/Jkn8Ez8Yw+PioSTXbsiz1pcNNacjDpAoGAPgey\n/buhT19oouPvh0Mx0x2tm42gTdsvus6f8I0C88cOXeFJ47NIcCxKL3n93P//BrdO\n2ekbwYZcOez5phcayYDtvE1OveR6oo0xr5Q+HwVwlu5oR3HaLz8GvbT8JPb9ACV0\nGUbKdHvUhbA1BOx30AipG4gX11jrA01I8GqBeskCgYEAnZ3pGc8TO3ek9P7WcfwP\nk3P1ctmveRJd0ozfynvDJZZLdcplWlciNsup7xHfl/X4ueoShUZWSGOlCzeW3ie/\n4vS9+efbwlXJ6tBNFUutwVOHyS5ZH69MzLX5k1aOlg7SwbIXzGH3oSKNa6kFmvOY\nXgMtrTJsvhAGSIo5Ys59HzM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ym37z@metodista-database.iam.gserviceaccount.com",
+  "client_id": "115230401317346765719",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ym37z%40metodista-database.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

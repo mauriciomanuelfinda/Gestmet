@@ -1,0 +1,2170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+}
+a{
+    opacity: 0.8px;
+}
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+a:hover{
+    opacity: 1px;
+}
+
+/*Cabeçalho*/
+
+header{
+    background-color: #dd0606e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div .img{
+    background-image: url('img/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 5px 0 5px ;
+    height: 50px;
+    width: 50px;
+}
+header div label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+header nav{
+    display: flex;
+    margin-right: 5px;
+}
+header nav li a{
+    margin: 0 2px 0 5px;
+    background-color: #fff;
+    color: #dd0606e1;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+@media(max-width:590px) {
+    header div label{
+        font-size: 12px;
+        text-align: center;
+    }
+    header nav li a{
+        padding: 8px;
+    }
+}
+
+/*Descricao*/
+
+.Descricao{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+.Descricao div{
+    display: grid;
+    gap: 10px;
+}
+.Descricao div:first-child{
+    display: grid;
+    width: 50%;
+}
+.Descricao div:last-child{
+    display: grid;
+    width: 40%;
+}
+.Descricao div h2{
+    font-size: 20px;
+    text-align: center;
+}
+.Descricao div p{
+    font-size: 16px;
+}
+.Descricao div img{
+    width: 60%;
+    justify-self: center;
+}
+@media(max-width:715px) {
+    .Descricao{
+        display: grid;
+    }
+    .Descricao div{
+        justify-self: center;
+    }
+    .Descricao div:first-child{
+        width: 80%;
+    }
+    .Descricao div:last-child{
+        width: 50%;
+    }
+    .Descricao div img{
+        height: 100%;
+        width: 100%;
+    }
+    .Descricao div h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .Descricao div p{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+/*Passos*/
+
+.Passos{
+    display: flex;
+    margin: 30px 0 30px 0;
+    gap: 10px;
+    width: 100%;
+}
+.Passos .all{
+    display: flex;
+    width: 50%;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.Passos .all:first-child{
+    margin-left: 5px;
+}
+.Passos .all:last-child{
+    margin-right: 5px;
+}
+.Passos .all div{
+    display: grid;
+    gap: 5px;
+    border: 1px solid red;
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+}
+.Passos .all div img{
+    gap: 0px;
+}
+.Passos .all div h2{
+    font-size: 20px;
+    text-align: center;
+}
+.Passos .all div p{
+    font-size: 16px;
+    text-align: justify;
+}
+@media(max-width:1080px) {
+    .Passos{
+        display: grid;
+    }
+    .Passos .all{
+        width: 100%;
+    }
+    .Passos .all div{
+        width: 40%;
+    }
+}
+@media(max-width:675px) {
+    .Passos .all{
+        display: grid;
+        justify-self: center; 
+    }
+    .Passos .all div{
+        width: 70%;
+        justify-self: center;
+        align-self: center;
+    }
+    .Passos .all:first-child{
+        margin-left: 0;
+    }
+    .Passos .all:last-child{
+        margin-right: 0;
+    }
+    .Passos .all div h2{
+        font-size: 16px;
+    }
+    .Passos .all div p{
+        font-size: 14px;
+    }
+}
+
+
+/*Estilização da Tela de Login*/
+
+#Login{
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    background-color: #dd0606d3;
+    border-radius: 10px;
+}
+#Login form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 80px;
+}
+#Login form label{
+    width: 230px;
+    font-size: 16px;
+    color: #fff;
+}
+#Login form input{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    border-color: #fff;
+    border-radius: 10px;
+}
+#Login form input[type="submit"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #dd0606e1;
+    border: none;
+    justify-self: center;
+    border-radius: 10px;
+}
+#Login form .EsqSenha{
+    color: #fff;
+    font-size: 16px;
+    text-align: left;   
+}
+#Login form a{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+@media(max-width:460px) {
+    #Login{
+        width: 85%; 
+    }
+    #Login form{
+        padding: 40px;
+    }
+    #Login form label{
+        width: 180px;
+        font-size: 14px;
+    }
+    #Login form input{
+        width: 200px;
+        height: 35px;
+        justify-self: center;
+        font-size: 14px;
+    }
+    #Login form input[type="submit"]{
+        width: 200px;
+        height: 35px;
+        font-size: 14px;
+    }
+    #Login form a{
+        font-size: 14px;
+    }
+}
+
+/*Estilização da Tela de Cadastramento*/
+
+#Erro{
+    position: absolute;
+    display: grid;
+    justify-self: center;
+    width: 80%;
+    margin-top: 30px;
+    background-color: #dd0606d3;
+    border-radius: 4px;
+}
+#Erro p{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+#Cadastro{
+    display: grid;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    background-color: #dd0606d3;
+    border-radius: 10px;
+}
+#Cadastro a{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#Cadastro form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: 5px;
+}
+#Cadastro form .all{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 5px;
+}
+#Cadastro form .all div{
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+}
+#Cadastro form div label{
+    font-size: 16px;
+    color: #fff;
+}
+#Cadastro form div .file{
+    background-color: #fff;
+    display: block;
+    align-content: center;
+    font-size: 16px;
+    color: #dd0606e1;
+    text-align: center;
+    text-transform: uppercase;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Cadastro form input[type="text"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    justify-self: center;
+    border-color: #fff;
+    border-radius: 10px;
+}
+#Cadastro form div .radios{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 5px;
+ }
+ #Cadastro form div .radios label{
+    display: grid;
+    font-size: 16px;
+    align-items: center;
+ }
+ #Cadastro form div .radios input[type="radio"]{
+    appearance: none;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+#Cadastro form div .radios input[type="radio"]:checked{
+    background-color: #dd0606d3;
+}
+#Cadastro form input[type="password"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    border-color: #fff;
+    border-radius: 10px;
+    justify-self: center;
+}
+#Cadastro form input[type="email"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    border-color: #fff;
+    border-radius: 10px;
+    justify-self: center;
+}
+#Cadastro form input[type="submit"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #dd0606e1;
+    border: none;
+    justify-self: center;
+    border-radius: 10px;
+}
+#Cadastro form small{
+    color: #fff;
+    font-size: 15px;
+}
+#Cadastro form input[type="file"]{
+    display: none;
+}
+@media(max-width:745px){
+    #Cadastro{
+        width: 75%;
+        justify-self: center;
+    }
+    #Cadastro form .all{
+        display: grid;
+    }
+    #Cadastro form input{
+        justify-self: center;
+    }
+}
+@media(max-width:465px){
+    #Cadastro{
+        width: 85%;
+    }
+    #Cadastro form{
+        padding: 20px;
+    }
+    #Cadastro form label{
+        font-size: 14px;
+    }
+    #Cadastro form div .file,
+    #Cadastro form input[type="text"],
+    #Cadastro form input[type="password"],
+    #Cadastro form input[type="email"],
+    #Cadastro form input[type="submit"]{
+        width: 200px;
+        height: 35px;
+        justify-self: center;
+        font-size: 14px;
+    }
+}
+@media(max-width:580px){
+    #Cadastro a{
+        text-align: center;
+    }
+}
+
+/*Estilização da Tela que ainda não sei o nome*/
+
+#Add-Membros{
+    display: grid;
+}
+#Add-Membros .main{
+    display: grid;
+    width: 100%;  
+}
+#Add-Membros .all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#Add-Membros .all .all-in{
+    width: 20%;
+    background-color: #dd0606e1;
+}
+#Add-Membros .all .all-in img{
+    margin-left: 5px;
+    height: 80px;
+    width: 80px;
+}
+#Add-Membros .all .nome-perfil{
+    display: flex;
+    width: 75%;
+    justify-content: right;
+    justify-self: right;
+    align-items: center;
+    height: 90px;
+    margin-right: 10px;
+    gap: 10px;
+}
+#Add-Membros .all .nome-perfil a{
+    margin: 0 2px 0 5px;
+    background-color: #dd0606e1;
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#Add-Membros .all .nome-perfil img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+#Add-Membros .all .nome-perfil h2{
+    font-size: 18px;
+}
+#Add-Membros .Dados{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Add-Membros .Dados .link{
+    width: 20%;
+    display: grid;
+    background-color: #dd0606e1;
+    align-items: center;
+}
+#Add-Membros .Dados .link a{
+    display: grid;
+    color: #fff;
+    width: 65%;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-self: center;
+}
+#Add-Membros .Dados .link a:first-child{
+    background-color: #fff;
+    color: #dd0606e1;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .link a:hover{
+    background-color: #fff;
+    color: #dd0606e1;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .link1{
+    width: 20%;
+    display: none;
+    background-color: #dd0606e1;
+    align-items: center;
+}
+#Add-Membros .Dados .link1 a{
+    display: grid;
+    color: #fff;
+    width: 65%;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-self: center;
+}
+
+#Add-Membros .Dados .in{
+    display: grid;
+    width: 75%;
+    justify-self: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+#Add-Membros .Dados .in h2{
+    font-size: 20px;
+    text-align: center;
+    color: #dd0606e1;
+}
+#Add-Membros .Dados .in p{
+    color: #dd0606e1;
+    font-weight: bold;
+    font-size: 20px;
+}
+#Add-Membros .Dados .in form{
+    display: grid;
+    padding: 15px;
+    width: 90%;
+    gap: 5px;
+    border: 1px solid red;
+    border-radius: 10px;
+    justify-self: center;
+}
+#Add-Membros .Dados .in form .manual-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#Add-Membros .Dados .in form .manual-nav input[type="radio"]{
+    appearance: none;
+    content: "";
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    border: 1px solid #dd0606e1;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .in form .manual-nav input[type="radio"]:checked{
+    background: #dd0606e1;
+}
+#Add-Membros .Dados .in form .container{
+    display: none;
+    align-items: center;
+    gap: 5px;
+}
+#Add-Membros .Dados .in form .container .all{
+    display: none;
+}
+#Add-Membros .Dados .in form .container input[type="submit"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    justify-self: center;
+    color: #fff;
+    background-color: #dd0606e1;
+    border-radius: 10px;
+    border: none;
+}
+#Add-Membros .Dados .in form .all{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#Add-Membros .Dados .in form #all2{
+    display: none;
+}
+#Add-Membros .Dados .in form #all3{
+    display: none;
+}
+#Add-Membros .Dados .in form .all .hard{
+    display: grid;
+    gap: 5px;
+}
+#Add-Membros .Dados .in form .all .hard label{
+    font-size: 16px;
+    color: #dd0606e1;
+}
+#Add-Membros .Dados .in form .all .hard input[type="text"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .in form .all .hard .data-batismo{
+    display: none;
+}
+#Add-Membros .Dados .in form .all .hard input[type="date"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    color: #dd0606e1;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .in form .all .hard input[type="number"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .in form .all .hard select{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    color: #dd0606e1;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .in form .all .hard select option{
+    font-size: 16px;
+    color: #fff;
+    background-color: #dd0606e1;
+}
+#Add-Membros .Dados .in form .all .hard .radios{
+    display: flex;
+    width: 280px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#Add-Membros .Dados .in form .all .hard .radios label{
+    font-size: 16px;
+    color: #dd0606e1;
+}
+#Add-Membros .Dados .in form .all .hard .radios input[type="radio"]{
+    appearance: none;
+    content: "";
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    border: 1px solid #dd0606e1;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#Add-Membros .Dados .in form .all .hard .radios input[type="radio"]:checked{
+    background: #dd0606e1;
+}
+#Add-Membros .Dados .in a{
+    display: grid;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    background-color: #dd0606e1;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    height: 35px;
+    text-align: center;
+    justify-self: right;
+    align-items: center;
+    align-self: self-end;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#Add-Membros .Dados .in form .Coral-Musical{
+    display: none;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#Add-Membros .Dados .in form .Coral-Musical .card{
+    display: grid;
+    gap: 5px;
+}
+#Add-Membros .Dados .in form .Coral-Musical .card label{
+    font-size: 16px;
+    color: #dd0606e1;
+}
+#Add-Membros .Dados .in form .Coral-Musical .card input[type="text"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+.open1{
+    display: flex;
+}
+.open2{
+    display: grid;
+}
+@media(max-width:900px){
+    #Add-Membros .Dados .in form{
+        width: 100%;
+    }
+    #Add-Membros .Dados .in form .Coral-Musical{
+        justify-content: center;
+    }
+    #Add-Membros .Dados .in form .all .hard .radios{
+        justify-content: space-evenly;
+    }
+    #Add-Membros .Dados .in form .all{
+        display: grid;
+        justify-content: center;
+    }
+}
+@media(max-width:680px){
+    #Add-Membros .Dados .link a{
+        width: 85%;
+        font-size: 14px;
+    }
+}
+@media (max-width:500px) {
+    #Add-Membros .all .nome-perfil{
+        height: 80px;
+        margin-right: 0;
+        gap: 5px;
+    }
+    #Add-Membros .all .nome-perfil h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    #Add-Membros .all .nome-perfil a{
+        padding: 8px 15px 8px 15px;
+        margin: 0;
+        margin-right: 5px;
+    }
+    #Add-Membros .all .nome-perfil img{
+        width: 80px;
+        height: 70px;
+    }
+    #Add-Membros .all{
+        gap: 8px;
+    }
+    #Add-Membros .all .all-in img{
+        width: 60%;
+    }
+}
+@media (max-width:455px) {
+    #Add-Membros .Dados .link1{
+        justify-content: center;
+        display: grid;
+    }
+    #Add-Membros .Dados .link{
+        display: none;
+    }
+    #Add-Membros .Dados .link1 a{
+        font-size: 30px;
+        background-color: transparent;
+    }
+    #Add-Membros .Dados .link1 a:first-child{
+        color: #000;
+    }
+    #Add-Membros .Dados .link1 a:hover{
+        color: #000;
+    }
+}
+@media (max-width:445px) {
+    #Add-Membros .Dados .in form{
+        justify-content: center;
+    }
+    #Add-Membros .Dados .in form .all .hard label,
+    #Add-Membros .Dados .in form .Coral-Musical .card label,
+    #Add-Membros .Dados .in form .all .hard .radios label{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media (max-width:390px) {
+   
+    #Add-Membros .Dados .in form .Coral-Musical .card input[type="text"],
+    #Add-Membros .Dados .in form .all .hard input[type="text"],
+    #Add-Membros .Dados .in form .all .hard input[type="date"],
+    #Add-Membros .Dados .in form .all .hard input[type="number"],
+    #Add-Membros .Dados .in form .all .hard select,
+    #Add-Membros .Dados .in form .all .hard .radios{
+        width: 65vw;
+        height: 30px;
+        justify-self: center;
+    }
+    #Add-Membros .Dados .in form .container input[type="submit"]{
+        width: 65vw;
+        height: 30px;
+    }
+
+}
+
+/*Estilização da página Ver Membros*/
+
+#Ver-Membros{
+    display: grid;
+}
+#Ver-Membros .main{
+    display: grid;
+    width: 100%;  
+}
+#Ver-Membros .all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#Ver-Membros .all .all-in{
+    width: 20%;
+    background-color: #dd0606e1;
+}
+#Ver-Membros .all .all-in img{
+    margin-left: 5px;
+    height: 80px;
+    width: 80px;
+}
+#Ver-Membros .all .nome-perfil{
+    display: flex;
+    width: 75%;
+    justify-content: right;
+    justify-self: right;
+    align-items: center;
+    height: 90px;
+    margin-right: 10px;
+    gap: 10px;
+}
+#Ver-Membros .all .nome-perfil a{
+    margin: 0 2px 0 5px;
+    background-color: #dd0606e1;
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#Ver-Membros .all .nome-perfil img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+#Ver-Membros .all .nome-perfil h2{
+    font-size: 18px;
+}
+#Ver-Membros .Dados{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Ver-Membros .Dados .link{
+    width: 20%;
+    display: grid;
+    background-color: #dd0606e1;
+    align-items: center;
+}
+#Ver-Membros .Dados .link a{
+    display: grid;
+    color: #fff;
+    width: 65%;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-self: center;
+}
+#Ver-Membros .Dados .link a:nth-child(2){
+    background-color: #fff;
+    color: #dd0606e1;
+    border-radius: 10px;
+}
+#Ver-Membros .Dados .link a:hover{
+    background-color: #fff;
+    color: #dd0606e1;
+    border-radius: 10px;
+}
+#Ver-Membros .Dados .link1{
+    width: 20%;
+    display: none;
+    background-color: #dd0606e1;
+    align-items: center;
+}
+#Ver-Membros .Dados .link1 a{
+    display: grid;
+    color: #fff;
+    width: 65%;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-self: center;
+}
+#Ver-Membros .Dados .in{
+    display: grid;
+    width: 75%;
+    justify-self: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+#Ver-Membros .Dados .in p{
+    font-size: 20px;
+    color: #dd0606e1;
+    font-weight: bold;
+}
+#Ver-Membros .Dados .in h2{
+    font-size: 20px;
+    text-align: center;
+    color: #dd0606e1;
+}
+#Ver-Membros .Dados .in .table-wrapper{
+    height: 400px;
+    width: 95%;
+    overflow-y: scroll;
+    border: 1px solid #dd0606e1;
+    border-radius: 10px;
+}
+#Ver-Membros .Dados .in .table-wrapper table{
+    border: 1px solid red;
+    border-collapse: separate;
+    border-spacing: 0px;
+    min-width: max-content;
+}
+#Ver-Membros .Dados .in table th{
+    position: sticky;
+    top: 0px;
+    background-color: #dd0606e1;
+    font-size: 18px;
+    color: #fff;
+}
+#Ver-Membros .Dados .in table tfoot td{
+    font-weight: bold;
+}
+#Ver-Membros .Dados .in table td button[type="submit"]{
+    background-color: #dd0606e1;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+#Ver-Membros .Dados .in table td{
+    font-size: 16px;
+    color: #dd0606d3;
+}
+#Ver-Membros .Dados .in table th,
+#Ver-Membros .Dados .in table td{
+    border: 1px solid red;
+    padding: 10px;
+    
+}
+#Ver-Membros .Dados .in a{
+    display: grid;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    background-color: #dd0606e1;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    height: 35px;
+    text-align: center;
+    justify-self: right;
+    align-items: center;
+    align-self: self-end;
+    border-radius: 10px;
+    font-size: 16px;
+}
+@media(max-width:680px){
+    #Ver-Membros .Dados .link a{
+        width: 85%;
+        font-size: 14px;
+    }
+}
+@media (max-width:500px) {
+    #Ver-Membros .all .nome-perfil{
+        height: 80px;
+        margin-right: 0;
+        gap: 5px;
+    }
+    #Ver-Membros .Dados .in table th,
+    #Ver-Membros .Dados .in table td{
+        font-size: 14px;
+    }
+    #Ver-Membros .all .nome-perfil h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    #Ver-Membros .all .nome-perfil a{
+        padding: 8px 15px 8px 15px;
+        margin: 0;
+        margin-right: 5px;
+    }
+    #Ver-Membros .all .nome-perfil img{
+        width: 80px;
+        height: 70px;
+    }
+    #Ver-Membros .all{
+        gap: 8px;
+    }
+    #Ver-Membros .all .all-in img{
+        width: 60%;
+    }
+}
+@media (max-width:455px) {
+    #Ver-Membros .Dados .link1{
+        justify-content: center;
+        display: grid;
+    }
+    #Ver-Membros .Dados .link{
+        display: none;
+    }
+    #Ver-Membros .Dados .link1 a{
+        font-size: 30px;
+        background-color: transparent;
+    }
+    #Ver-Membros .Dados .link1 a:nth-child(2){
+        color: #000;
+    }
+    #Ver-Membros .Dados .link1 a:hover{
+       color: #000;
+    }
+}
+/*Estilização da página pesquisar de membros*/
+
+#Pesq-Membros{
+    display: grid;
+}
+#Pesq-Membros .main{
+    display: grid;
+    width: 100%;  
+}
+#Pesq-Membros .all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#Pesq-Membros .all .all-in{
+    width: 20%;
+    background-color: #dd0606e1;
+}
+#Pesq-Membros .all .all-in img{
+    margin-left: 5px;
+    height: 80px;
+    width: 80px;
+}
+#Pesq-Membros .all .nome-perfil{
+    display: flex;
+    width: 75%;
+    justify-content: right;
+    justify-self: right;
+    align-items: center;
+    height: 90px;
+    margin-right: 10px;
+    gap: 10px;
+}
+#Pesq-Membros .all .nome-perfil img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+#Pesq-Membros .all .nome-perfil a{
+    margin: 0 2px 0 5px;
+    background-color: #dd0606e1;
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#Pesq-Membros .all .nome-perfil h2{
+    font-size: 18px;
+}
+#Pesq-Membros .Dados{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Pesq-Membros .Dados .link{
+    width: 20%;
+    display: grid;
+    background-color: #dd0606e1;
+    align-items: center;
+}
+#Pesq-Membros .Dados .link a{
+    display: grid;
+    color: #fff;
+    width: 65%;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-self: center;
+}
+#Pesq-Membros .Dados .link a:last-child{
+    background-color: #fff;
+    color: #dd0606e1;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Pesq-Membros .Dados .link a:hover{
+    background-color: #fff;
+    color: #dd0606e1;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Pesq-Membros .Dados .link1{
+    width: 20%;
+    display: none;
+    background-color: #dd0606e1;
+    align-items: center;
+}
+#Pesq-Membros .Dados .link1 a{
+    display: grid;
+    color: #fff;
+    width: 65%;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-self: center;
+}
+#Pesq-Membros .Dados .in{
+    display: grid;
+    width: 75%;
+    justify-self: center;
+    gap: 5px;
+}
+#Pesq-Membros .Dados .in h2{
+    font-size: 20px;
+    text-align: center;
+    color: #dd0606e1;
+}
+#Pesq-Membros .Dados .in p{
+    color: #dd0606e1;
+    font-weight: bold;
+    font-size: 20px;
+}
+#Pesq-Membros .Dados .in .card{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    gap: 5px;
+    justify-self: center;
+}
+#Pesq-Membros .Dados .in .card form{
+    display: grid;
+    width: 95%;
+    justify-self: center;
+    gap: 5px;
+}
+#Pesq-Membros .Dados .in form label{
+    font-size: 18px;
+    text-align: center;
+    color: #dd0606e1;
+}
+#Pesq-Membros .Dados .in form div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+    justify-self: center;
+}
+#Pesq-Membros .Dados .in form div input[type="search"]{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    justify-self: center;
+    border-color: #dd0606e1;
+}
+#Pesq-Membros .Dados .in form div input[type="submit"]{
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    justify-self: center;
+    background-color: #dd0606e1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+#Pesq-Membros .Dados .in .card .wrap{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    height: 300px;
+    width: 95%;
+    overflow-y: scroll;
+    border: 1px solid #dd0606e1;
+    border-radius: 10px;
+}
+#Pesq-Membros .Dados .in .card .wrap .wrap-in{
+    display: grid;
+    gap: 5px;
+    width: 90%;
+    justify-self: center;
+    border-collapse: separate;
+    border-spacing: 0px;
+    min-width: max-content;
+}
+#Pesq-Membros .Dados .in .card .wrap .div1{
+    display: flex;
+    justify-self: center;
+    width: 60%;
+    justify-content: space-evenly;
+} 
+#Pesq-Membros .Dados .in .wrap .div1 .all{
+    display: grid;
+}
+#Pesq-Membros .Dados .in .wrap .div1 .all label{
+    font-size: 16px;
+    color: #dd0606e1;
+    font-weight: bold;
+} 
+#Pesq-Membros .Dados .in .wrap .div1 .all p{
+    font-size: 16px;
+    color: #dd0606e1;
+}
+#Pesq-Membros .Dados .in .card .wrap .div2{
+    display: none;
+    gap: 5px;
+    justify-self: center;
+    justify-content: center;
+} 
+#Pesq-Membros .Dados .in .wrap .div2 label{
+    font-size: 18px;
+    text-align: center;
+    color: #dd0606e1;
+    font-weight: bold;
+} 
+#Pesq-Membros .Dados .in .wrap .div2 p{
+    font-size: 16px;
+    text-align: center;
+    color: #dd0606e1;
+}
+#Pesq-Membros .Dados .in .inputs{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+}
+#Pesq-Membros .Dados .in .inputs form{
+    display: grid;
+    width: 25%;
+    justify-self: center;
+}
+#Pesq-Membros .Dados .in .inputs form input[type="submit"]{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    background-color: #dd0606e1;
+    color: #fff;
+    border: none;
+    justify-self: center;
+    border-radius: 10px;
+}
+#Pesq-Membros .Dados .in .inputs input[type="submit"]{
+    width: 25%;
+    height: 35px;
+    font-size: 16px;
+    background-color: #dd0606e1;
+    color: #fff;
+    border: none;
+    justify-self: center;
+    border-radius: 10px;
+}
+#Pesq-Membros .Dados .in a{
+    display: grid;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    background-color: #dd0606e1;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    height: 35px;
+    text-align: center;
+    justify-self: right;
+    align-items: center;
+    align-self: self-end;
+    border-radius: 10px;
+    font-size: 16px;
+}
+@media(max-width:900px){
+    #Pesq-Membros .Dados .in .card .wrap .div1{
+        width: 80%;
+    }
+}
+@media(max-width:700px){
+    #Pesq-Membros .Dados .in .card .wrap .div1{
+        width: 95%;
+    }
+}
+@media(max-width:680px){
+    #Pesq-Membros .Dados .link a{
+        width: 85%;
+        font-size: 14px;
+    }
+}
+@media(max-width:575px){
+    #Pesq-Membros .Dados .in .card .wrap .div1{
+        display: none;
+    }
+    #Pesq-Membros .Dados .in .card .wrap .div2{
+        display: grid;
+    }
+}
+@media (max-width:500px) {
+    #Pesq-Membros .all .nome-perfil{
+        height: 80px;
+        margin-right: 0;
+        gap: 5px;
+    }
+    #Pesq-Membros .all .nome-perfil h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    #Pesq-Membros .all .nome-perfil a{
+        padding: 8px 15px 8px 15px;
+        margin: 0;
+        margin-right: 4px;
+    }
+    #Pesq-Membros .all .nome-perfil img{
+        width: 80px;
+        height: 70px;
+    }
+    #Pesq-Membros .all{
+        gap: 8px;
+    }
+    #Pesq-Membros .all .all-in img{
+        width: 60%;
+    }
+}
+@media (max-width:460px) {
+    #Pesq-Membros .Dados .in form div input[type="search"]{
+        width: 60%;
+    }
+    #Pesq-Membros .Dados .in form div input[type="submit"],
+    #Pesq-Membros .Dados .in .inputs input[type="button"]{
+        width: 35%;
+    }
+}
+@media (max-width:455px) {
+    #Pesq-Membros .Dados .link1{
+        justify-content: center;
+        display: grid;
+    }
+    #Pesq-Membros .Dados .link{
+        display: none;
+    }
+    #Pesq-Membros .Dados .link1 a{
+        font-size: 30px;
+        background-color: transparent;
+    }
+    #Pesq-Membros .Dados .link1 a:last-child{
+        color: #000;
+    }
+    #Pesq-Membros .Dados .link1 a:hover{
+        color: #000;
+    }
+    #Pesq-Membros .Dados .in .inputs input[type="submit"],
+    #Pesq-Membros .Dados .in .inputs form{
+        width: 40%;   
+    }
+    #Pesq-Membros .Dados .in a{
+        margin-top: 15px;
+    }
+}
+
+/*Estilização da Secção Edit-Membros*/
+
+#Edit-Membros {
+    background-color: #dd0606e1;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    gap: 5px;
+}
+#Edit-Membros p{
+    font-size: 20px;
+    justify-self: end;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#Edit-Membros  h2{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+#Edit-Membros  form{
+    display: grid;
+    padding: 15px;
+    width: 90%;
+    gap: 5px;
+    border-radius: 10px;
+    justify-self: center;
+}
+#Edit-Membros  form .manual-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#Edit-Membros  form .manual-nav input[type="radio"]{
+    appearance: none;
+    content: "";
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    border: 4px solid #fff;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#Edit-Membros  form .manual-nav input[type="radio"]:checked{
+    background: #dd0606e1;
+    border-color: #fff;
+}
+#Edit-Membros  form .container{
+    display: none;
+    align-items: center;
+    gap: 5px;
+}
+#Edit-Membros  form .container .all{
+    display: none;
+}
+#Edit-Membros  form .container input[type="submit"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    justify-self: center;
+    color: #dd0606e1;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+#Edit-Membros  form .all{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#Edit-Membros  form #all2{
+    display: none;
+}
+#Edit-Membros  form #all3{
+    display: none;
+}
+#Edit-Membros  form .all .hard{
+    display: grid;
+    gap: 5px;
+}
+#Edit-Membros  form .all .hard label{
+    font-size: 16px;
+    color: #fff;
+}
+#Edit-Membros  form .all .hard input[type="text"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Edit-Membros  form .all .hard .data-batismo{
+    display: none;
+}
+#Edit-Membros  form .all .hard input[type="date"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    color: #dd0606e1;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Edit-Membros  form .all .hard input[type="number"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Edit-Membros  form .all .hard select{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    color: #dd0606e1;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Edit-Membros  form .all .hard select option{
+    font-size: 16px;
+    color: #dd0606e1;
+    background-color: #fff;
+}
+#Edit-Membros  form .all .hard .radios{
+    display: flex;
+    width: 280px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#Edit-Membros  form .all .hard .radios label{
+    font-size: 16px;
+    color: #fff;
+}
+#Edit-Membros  form .all .hard .radios input[type="radio"]{
+    appearance: none;
+    content: "";
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    border: 4px solid #fff;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#Edit-Membros  form .all .hard .radios input[type="radio"]:checked{
+    background: #dd0606e1;
+}
+#Edit-Membros  form .Coral-Musical{
+    display: none;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#Edit-Membros  form .Coral-Musical .card{
+    display: grid;
+    gap: 5px;
+}
+#Edit-Membros  form .Coral-Musical .card label{
+    font-size: 16px;
+    color: #fff;
+}
+#Edit-Membros  form .Coral-Musical .card input[type="text"]{
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    border-color: #dd0606e1;
+    border-radius: 10px;
+}
+.open1{
+    display: flex;
+}
+.open2{
+    display: grid;
+}
+@media(max-width:900px){
+    #Edit-Membros  form{
+        width: 100%;
+    }
+    #Edit-Membros  form .Coral-Musical{
+        justify-content: center;
+    }
+    #Edit-Membros  form .all .hard .radios{
+        justify-content: space-evenly;
+    }
+    #Edit-Membros  form .all{
+        display: grid;
+        justify-content: center;
+    }
+}
+@media (max-width:445px) {
+    #Edit-Membros  form{
+        justify-content: center;
+    }
+    #Edit-Membros  form .all .hard label,
+    #Edit-Membros  form .Coral-Musical .card label,
+    #Edit-Membros  form .all .hard .radios label{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media (max-width:390px) {
+    #Edit-Membros  form .Coral-Musical .card input[type="text"],
+    #Edit-Membros  form .all .hard input[type="text"],
+    #Edit-Membros  form .all .hard input[type="date"],
+    #Edit-Membros  form .all .hard input[type="number"],
+    #Edit-Membros  form .all .hard select,
+    #Edit-Membros  form .all .hard .radios{
+        width: 65vw;
+        height: 30px;
+        justify-self: center;
+    }
+    #Edit-Membros  form .container input[type="submit"]{
+        width: 65vw;
+        height: 30px;
+    }
+}
+
+/*Estilização da página perfil*/
+
+#Perfil{
+    display: grid;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    background-color: #dd0606e1;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+#Perfil .img{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    height: 30vh;
+}
+#Perfil .img img{
+    width: 15vw;
+    height: 20vh;
+    justify-self: center;
+    align-self: center;
+    border-radius: 100%;
+}
+#Perfil .img h2{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+#Perfil .main{
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+}
+#Perfil .main1{
+    display: none;
+    align-self: center;
+    justify-content: center;
+}
+#Perfil .main1 label{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+#Perfil .main1 p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+#Perfil .main .all{
+    display: grid;
+    align-self: center;
+    gap: 10px;
+}
+#Perfil .main .all label{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+#Perfil .main .all p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+#Perfil a{
+    justify-self: right;
+    background-color: #fff;
+    color: #dd0606e1;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width:1020px) {
+    #Perfil{
+        width: 60%;
+    }
+}
+@media (max-width:920px) {
+    #Perfil{
+        width: 70%;
+    }
+}
+@media (max-width:780px) {
+    #Perfil{
+        width: 80%;
+    }
+}
+@media (max-width:660px) {
+    #Perfil .main1{
+        display: grid;
+        gap: 10px;
+    }
+    #Perfil .main1 p,
+    #Perfil .main1 label{
+        text-align: center;
+    }
+    #Perfil .main{
+        display: none;
+    }
+    #Perfil .img img{
+        width: 20vw;
+    }
+}
+@media (max-width:425px) {
+    #Perfil{
+        width: 90%;
+    }
+    #Perfil .main1 p,
+    #Perfil .main1 label{
+        font-size: 16px;
+    }
+    #Perfil a{
+        font-size: 14px;
+        padding: 8px;
+    }
+    #Perfil .img img{
+        width: 30vw;
+        height: 18vh;
+    }
+}
+@media (max-width:340px) {
+    #Perfil{
+        width: 95%;
+    }
+    #Perfil .main1 p,
+    #Perfil .main1 label{
+        font-size: 14px;
+    }
+}
+
+/*Estilização da página editar perfil*/
+
+#Edit-Perfil{
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    background-color: #dd0606d3;
+    border-radius: 10px;
+}
+#Edit-Perfil form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 5px;
+}
+#Edit-Perfil form img{
+    width: 15vw;
+    height: 20vh;
+    justify-self: center;
+    align-self: center;
+    border-radius: 100%;
+}
+#Edit-Perfil form .all{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 5px;
+}
+#Edit-Perfil form .all div{
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+}
+
+#Edit-Perfil form .all label{
+    font-size: 16px;
+    color: #fff;
+}
+#Edit-Perfil form .all input[type="text"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    justify-self: center;
+    border-color: #fff;
+    border-radius: 10px;
+}
+#Edit-Perfil form .all input[type="password"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    justify-self: center;
+    border-color: #fff;
+    border-radius: 10px;
+}
+#Edit-Perfil form .all input[type="email"]{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    justify-self: center;
+    border-color: #fff;
+    border-radius: 10px;
+}
+#Edit-Perfil form .all .file{
+    background-color: #fff;
+    display: block;
+    align-content: center;
+    font-size: 16px;
+    color: #dd0606e1;
+    text-align: center;
+    text-transform: uppercase;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Edit-Perfil form div .radios{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 5px;
+ }
+ #Edit-Perfil form div .radios label{
+    display: grid;
+    font-size: 16px;
+    justify-self: center;
+    align-items: center;
+ }
+ #Edit-Perfil form div .radios input[type="radio"]{
+    appearance: none;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: white;
+    justify-self: center;
+}
+#Edit-Perfil form div .radios input[type="radio"]:checked{
+    background-color: #dd0606d3;
+}
+#Edit-Perfil form .input{
+    display: flex;
+    justify-self: center;
+    gap: 5px;
+}
+#Edit-Perfil form .input input[type="submit"]{
+    width: 210px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #dd0606e1;
+    border: none;
+    justify-self: center;
+    border-radius: 10px;
+}
+#Edit-Perfil form .input a{
+    padding: 10px 75px 10px 75px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #dd0606e1;
+    border: none;
+    justify-self: center;
+    border-radius: 10px;
+}
+#Edit-Perfil form input[type="file"]{
+    display: none;
+}
+@media(max-width:770px){
+    #Edit-Perfil form .file img{
+        width: 25vw;
+        height: 20vh;
+    }
+}
+@media(max-width:745px){
+    #Edit-Perfil{
+        width: 75%;
+        justify-self: center;
+    }
+    #Edit-Perfil form .all{
+        display: grid;
+        justify-content: center;
+    }
+    #Edit-Perfil form .input{
+        display: grid;
+    }
+    #Edit-Perfil form input{
+        justify-self: center;
+    }
+}
+@media(max-width:465px){
+    #Edit-Perfil{
+        width: 85%;
+        justify-content: center;
+        justify-self: center;
+    }
+    #Edit-Perfil form{
+        padding: 20px;
+        justify-content: center;
+    }
+    #Edit-Perfil form img{
+        width: 30vw;
+        height: 18vh;
+        
+    }
+    #Edit-Perfil form label{
+        font-size: 14px;
+    }
+    #Edit-Perfil form .all input[type="text"],
+    #Edit-Perfil form .all input[type="password"],
+    #Edit-Perfil form .all input[type="email"],
+    #Edit-Perfil form .all .file{
+        width: 200px;
+        height: 35px;
+        justify-self: center;
+        font-size: 14px;
+    }
+    #Edit-Perfil form .input input[type="submit"]{
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+    }
+    #Edit-Perfil form .input a{
+        font-size: 14px;
+        padding: 10px 63px 10px 63px;
+    }
+}
+
+/*Estilização de página getcode*/
+
+#Getcode{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    gap: 10px;
+}
+#Getcode .div{
+    display: grid;
+    background-color: #dd0606e1;
+    width: 100%;
+    box-shadow: 0px 1px 2px #232f3e;
+    border-radius: 5px;
+}
+#Getcode .div p{
+    font-size: 18px;
+    color: #fff;
+}
+#Getcode img{
+    width: 15vw;
+    height: 20vh;
+    justify-self: center;
+}
+#Getcode p{
+    font-size: 18px;
+    color: #dd0606e1;
+}
+#Getcode form{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    height: 35vh;
+    padding: 40px;
+    background-color: #dd0606e1;
+    border-radius: 10px;
+}
+#Getcode form .all{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+}
+#Getcode form .all label{
+    font-size: 18px;
+    color: #fff;
+}
+#Getcode form .all input[type="text"]{
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    justify-self: center;
+    border-radius: 10px;
+    text-align: center;
+    color: #dd0606e1;
+    border: none;
+}
+#Getcode form .all input[type="text"]:focus{
+    border-color: orangered;
+}
+#Getcode form .all input[type="text"]::placeholder{
+    color: orangered;
+}
+#Getcode form .all input[type="submit"]{
+    padding: 10px;
+    background-color: #fff;
+    color: #dd0606e1;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 98%;
+    justify-self: center;
+}
+#Getcode form .all input[type="submit"]:hover{
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width:490px) {
+    #Getcode{
+        width: 80%;
+    }
+    #Getcode form .all label{
+        font-size: 14px;
+        text-align: center;
+    }
+    #Getcode form .all input[type="text"],
+    #Getcode form .all input[type="submit"]{
+        padding: 8px;
+    }
+}
+@media (max-width:375px) {
+    #Getcode form{
+        width: 100%;
+    }
+    #Getcode img{
+        width: 25vw;
+        height: 15vh;
+    }
+}
+
+/*Estilização de página Esqueci Senha*/
+
+#EsqSenha{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    gap: 10px;
+}
+#EsqSenha img{
+    width: 15vw;
+    height: 20vh;
+    justify-self: center;
+}
+#EsqSenha form{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    height: 35vh;
+    padding: 40px;
+    background-color: #dd0606e1;
+    border-radius: 10px;
+}
+#EsqSenha form .all{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+}
+#EsqSenha form .all label{
+    font-size: 18px;
+    color: #fff;
+}
+#EsqSenha form .all input[type="email"]{
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    justify-self: center;
+    border-radius: 10px;
+    text-align: center;
+    color: #dd0606e1;
+    border: none;
+}
+#EsqSenha form .all input[type="email"]::placeholder{
+    color: orangered;
+}
+#EsqSenha form .all input[type="submit"]{
+    padding: 10px;
+    background-color: #fff;
+    color: #dd0606e1;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 98%;
+    justify-self: center;
+}
+#EsqSenha form .all input[type="submit"]:hover{
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width:490px) {
+    #EsqSenha{
+        width: 80%;
+    }
+    #EsqSenha form .all label{
+        font-size: 14px;
+        text-align: center;
+    }
+    #EsqSenha form .all input[type="email"],
+    #EsqSenha form .all input[type="submit"]{
+        padding: 8px;
+    }
+}
+@media (max-width:375px) {
+    #EsqSenha form{
+        width: 100%;
+    }
+    #EsqSenha img{
+        width: 25vw;
+        height: 15vh;
+    }
+}
+
+/*Rodapé*/
+
+footer{
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    gap: 15px;
+}
+footer a{
+    font-size: 16px;
+    color: #fff;
+}
+footer p{
+    font-size: 14px;
+}
+@media(max-width:430px) {
+    footer a{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}

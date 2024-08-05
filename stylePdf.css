@@ -1,0 +1,202 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+body{
+    display: grid;
+}
+#Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#Cabecalho .img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 55px;
+}
+#Cabecalho .img img{
+    width: 140px;
+    height: 130px;
+    left: 40px;
+}
+#Cabecalho .texto{
+    position: relative;
+    top: -110px;
+}
+#Cabecalho div p{
+    text-align: center;
+}
+#Cabecalho div p:last-child{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*================================*/
+
+#fic-mem p{
+    font-weight: bold;
+    position: relative;
+    top: -80px;
+    left: 40px;
+}
+#fic-mem div{
+    width: 120px;
+    height: 135px;
+    position: relative;
+    left: 550px;
+    top: -165px;
+    justify-self: right;
+    border: 1px solid;
+}
+
+/*===================================*/
+
+#Passo1{
+    position: relative;
+    top: -140px;
+    left: 40px;
+}
+#Passo1  .p1{
+    position: relative;
+    top: -10px;
+}
+#Passo1 .p2{
+    position: relative;
+    top: -25px;
+}
+#Passo1 .p3{
+    position: relative;
+    top: -55px;
+    left: 400px;
+}
+#Passo1 .p4{
+    position: relative;
+    top: -70px;
+    
+}
+#Passo1 .p5{
+    position: relative;
+    top: -100px;
+    left: 250px;  
+}
+#Passo1 .p6{
+    position: relative;
+    top: -130px;
+    left: 400px;
+}
+#Passo1 .p7{
+    position: relative;
+    top: -145px;
+}
+#Passo1 .p8{
+    position: relative;
+    top: -175px;
+    left: 250px;
+}
+
+/*=====================================*/
+
+#Passo2{
+    position: relative;
+    top: -310px;
+    left: 40px;
+}
+#Passo2 .p1{
+    position: relative;
+    top: -10px;
+}
+#Passo2 .p2{
+    position: relative;
+    top: -40px;
+    left: 250px;
+}
+#Passo2 .p3{
+    position: relative;
+    top: -55px;
+}
+#Passo2 .p4{
+    position: absolute;
+    top: 55px;  
+}
+#Passo2 .p5{
+    position: absolute;
+    top: 55px;
+    left: 250px;  
+}
+#Passo2 .p6{
+    position: absolute;
+    top: 85px;
+}
+#Passo2 .p7{
+    position: absolute;
+    top: 115px;
+}
+#Passo2 .p8{
+    position: absolute;
+    top: 115px;
+    left: 400px;
+}
+
+/*=====================================*/
+
+#Passo3{
+    position: relative;
+    top: -260px;
+    left: 40px;
+}
+#Passo3 .p1{
+    position: relative;
+    top: -10px;
+}
+#Passo3 .p2{
+    position: absolute;
+    top: 20px;
+}
+#Passo3 .p3{
+    position: absolute;
+    top: 45px;
+}
+#Passo3 .p4{
+    position: absolute;
+    top: 75px;  
+}
+#Passo3 .p5{
+    position: absolute;
+    top: 75px;
+    left: 250px;  
+}
+#Passo3 .p6{
+    position: absolute;
+    top: 105px;
+}
+
+/*====================================*/
+
+#Ld-Data{
+    position: absolute;
+    top: 860px;
+    width: 100%;
+}
+#Ld-Data p{
+    text-align: center;
+}
+
+/*=========================================*/
+
+#Ass-Pres{
+    position: absolute;
+    text-align: center;
+    top: 910px;
+    width: 100%;
+}
+#Ass-Pres p:first-child{
+    position: relative;
+    left: 250px;
+    width: 30%;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
